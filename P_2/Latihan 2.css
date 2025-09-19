@@ -1,0 +1,126 @@
+<<<<<<< HEAD
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+   color: #666;
+   line-height: 1.6;
+} 
+
+/* 2. CLASS SELECTOR - dimulai dengan titik (.) */
+.highlight {
+    background-color: #fff3cd;
+    padding: 10px;
+    border-left: 4px solid #ffc107;
+    margin: 10px 0;
+}
+
+.warning {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+.border {
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+
+/* 3. ID SELECTOR - dimulai dengan hash (#) */
+#special {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    font-weight: bold;
+    padding: 15px;
+    border: 2px solid #17a2b8;
+}
+
+/* 4. DESCENDANT SELECTOR - elemen di dalam elemen lain */
+.container h2 {
+    color: #28a745;
+    border-bottom: 2px solid #28a745;
+}
+
+.container p {
+    color: #495057;
+    margin-left: 20px;
+}
+
+.container .inner p {
+    color: #6f42c1;
+    font-style: italic;
+    margin-left: 40px;
+=======
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+   color: #666;
+   line-height: 1.6;
+} 
+
+/* 2. CLASS SELECTOR - dimulai dengan titik (.) */
+.highlight {
+    background-color: #fff3cd;
+    padding: 10px;
+    border-left: 4px solid #ffc107;
+    margin: 10px 0;
+}
+
+.warning {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+.border {
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+
+/* 3. ID SELECTOR - dimulai dengan hash (#) */
+#special {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    font-weight: bold;
+    padding: 15px;
+    border: 2px solid #17a2b8;
+}
+
+/* 4. DESCENDANT SELECTOR - elemen di dalam elemen lain */
+.container h2 {
+    color: #28a745;
+    border-bottom: 2px solid #28a745;
+}
+
+.container p {
+    color: #495057;
+    margin-left: 20px;
+}
+
+.container .inner p {
+    color: #6f42c1;
+    font-style: italic;
+    margin-left: 40px;
+>>>>>>> 0c93a78fd3d6893157e552e5c1a3961d4bd1d944
+}
