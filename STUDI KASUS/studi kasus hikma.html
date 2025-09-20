@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Tradisional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="studi kasus hikma.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>MENU MAKANAN TRADISIONAL RUMAH MAKAN SEDERHANA</h1>
+      <p>Klik Menu Untuk Melihat Harga dan Untuk Pemesanan</p>
+      <p class="alamat">Alamat: Jl. Jakarta No 5</p>
+    </header>
+
+    <main>
+      <div class="menu">
+        <div class="card" onclick="openModal('Nasi Tumpeng','Rp 150.000','Pesan melalui WhatsApp: 0812-3456-7890')">
+          <img src="nasi-tumpeng.jpg" alt="Nasi Tumpeng">
+          <div class="card-content">
+            <h3>Nasi Tumpeng</h3>
+            <p>Nasi kuning berbentuk kerucut dengan lauk pauk khas, simbol syukuran tradisional Jawa.</p>
+          </div>
+        </div>
+
+        <div class="card" onclick="openModal('Sate Ayam','Rp 25.000','Pesan melalui WhatsApp: 0812-3456-7890')">
+          <img src="sate-ayam.jpg" alt="Sate Ayam">
+          <div class="card-content">
+            <h3>Sate Ayam</h3>
+            <p>Daging ayam ditusuk lalu dibakar, disajikan dengan saus kacang gurih pedas khas Indonesia.</p>
+          </div>
+        </div>
+
+        <div class="card" onclick="openModal('Rendang','Rp 40.000','Pesan melalui WhatsApp: 0812-3456-7890')">
+          <img src="rendang.jpg" alt="Rendang">
+          <div class="card-content">
+            <h3>Rendang</h3>
+            <p>Masakan daging khas Minangkabau yang dimasak lama dengan santan dan rempah pilihan.</p>
+          </div>
+        </div>
+
+        <div class="card" onclick="openModal('Gado-Gado','Rp 20.000','Pesan melalui WhatsApp: 0812-3456-7890')">
+          <img src="gado-gado.jpg" alt="Gado-Gado">
+          <div class="card-content">
+            <h3>Gado-Gado</h3>
+            <p>Sayuran rebus disiram saus kacang kental, sering disebut salad tradisional Indonesia.</p>
+          </div>
+        </div>
+
+        <div class="card" onclick="openModal('Pempek','Rp 18.000','Pesan melalui WhatsApp: 0812-3456-7890')">
+          <img src="pempek.jpg" alt="Pempek">
+          <div class="card-content">
+            <h3>Pempek</h3>
+            <p>Makanan khas Palembang dari ikan dan sagu, disajikan dengan kuah cuko asam manis pedas.</p>
+          </div>
+        </div>
+
+        <div class="card" onclick="openModal('Gudeg','Rp 22.000','Pesan melalui WhatsApp: 0812-3456-7890')">
+          <img src="gudeg.jpg" alt="Gudeg">
+          <div class="card-content">
+            <h3>Gudeg</h3>
+            <p>Olahan nangka muda khas Yogyakarta dengan rasa manis gurih, biasanya ditemani ayam dan telur.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2025 Menu Makanan Tradisional Rumah Makan Sederhana
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h3 id="modal-title"></h3>
+      <p id="modal-price"></p>
+      <p id="modal-order"></p>
+      <button class="close-btn" onclick="closeModal()">Tutup</button>
+    </div>
+  </div>
+
+  <script>
+    function openModal(title, price, order){
+      document.getElementById('modal-title').innerText = title;
+      document.getElementById('modal-price').innerText = "Harga: " + price;
+      document.getElementById('modal-order').innerText = order;
+      document.getElementById('modal').style.display = 'flex';
+    }
+    function closeModal(){
+      document.getElementById('modal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
