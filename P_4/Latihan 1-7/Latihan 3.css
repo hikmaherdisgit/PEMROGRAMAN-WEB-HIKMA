@@ -1,0 +1,18 @@
+body{
+background:url(img/bunga.jpg) no-repeat;
+font-family:Georgia;
+}
+h1{
+background-color:purple;
+text-align:center;
+color:white;
+}
+h2{
+color:red;
+font-size:25px;
+}
+p{
+margin-left:50px;
+color:rgb(255, 231, 0);
+font-size:24px;
+}
