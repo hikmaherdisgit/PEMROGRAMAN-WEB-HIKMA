@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Seleksi If-Else</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var nilai = prompt("Masukkan nilai Anda (0 - 100): ", 0);
+            var hasil = "";
+
+            if (nilai >= 60 && nilai <= 100)
+                hasil = "Lulus";
+            else if (nilai >= 0 && nilai < 60)
+                hasil = "Tidak Lulus";
+            else
+                hasil = "Nilai tidak valid!";
+
+            document.write("<h3>Hasil Seleksi Nilai</h3>");
+            document.write("Nilai Anda : <b>" + nilai + "</b><br>");
+            document.write("Status : <b>" + hasil + "</b>");
+        </script>
+    </body>
+</html>
