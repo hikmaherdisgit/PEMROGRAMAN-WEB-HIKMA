@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Clone - Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Aktifkan dark mode berbasis class
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800 dark:bg-black dark:text-gray-200 transition-colors duration-300">
+
+  <main class="max-w-5xl mx-auto p-4">
+
+    <!-- 🔘 Toggle Dark Mode -->
+    <div class="flex justify-end mb-4">
+      <button id="darkToggle" class="px-3 py-1 border rounded-md text-sm font-semibold hover:bg-gray-100 dark:hover:bg-gray-800">
+        🌙 Dark Mode
+      </button>
+    </div>
+
+    <!-- HEADER PROFIL -->
+    <header class="flex flex-col md:flex-row items-center gap-6 mb-6">
+      <!-- Foto Profil -->
+      <div class="relative">
+        <div class="w-32 h-32 rounded-full p-[3px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+          <img src="assets/img/1.jpg" alt="Foto Profil"
+            class="w-full h-full rounded-full border-4 border-white object-cover">
+        </div>
+      </div>
+
+      <!-- Info Profil -->
+      <div class="flex-1">
+        <div class="flex flex-col md:flex-row md:items-center md:gap-4 mb-3">
+          <h2 class="text-2xl font-semibold">maa</h2>
+          <div class="flex gap-2 mt-2 md:mt-0">
+            <button class="px-4 py-1 bg-blue-500 text-white rounded-md text-sm font-semibold hover:bg-blue-600 w-full md:w-auto">Follow</button>
+            <button class="px-4 py-1 border rounded-md text-sm font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 w-full md:w-auto">Message</button>
+          </div>
+        </div>
+
+        <!-- Statistik -->
+        <div class="hidden md:flex gap-6 mb-3">
+          <p><span class="font-bold">12</span> posts</p>
+          <p><span class="font-bold">1k</span> followers</p>
+          <p><span class="font-bold">1</span> following</p>
+        </div>
+
+        <!-- Bio -->
+        <div>
+          <h1 class="font-bold">୨ৎ</h1>
+          <p class="text-gray-600 dark:text-gray-400">seni</p>
+          <a href="#" class="text-blue-600 font-semibold">dump.com</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Statistik (Mobile) -->
+    <section class="flex md:hidden justify-around text-center border-y py-2 mb-6 dark:border-gray-700">
+      <div><span class="font-bold block">12</span><span class="text-gray-500 dark:text-gray-400">posts</span></div>
+      <div><span class="font-bold block">1k</span><span class="text-gray-500 dark:text-gray-400">followers</span></div>
+      <div><span class="font-bold block">1</span><span class="text-gray-500 dark:text-gray-400">following</span></div>
+    </section>
+
+    <!-- 🔥 SOROTAN (Highlight Stories) -->
+    <section class="flex gap-6 overflow-x-auto pb-4 mb-6 scrollbar-hide">
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 rounded-full border border-gray-300 dark:border-gray-600 p-[2px]">
+          <img src="assets/img/2.jpg" class="w-full h-full rounded-full object-cover">
+        </div>
+        <span class="text-xs mt-2">Travel</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 rounded-full border border-gray-300 dark:border-gray-600 p-[2px]">
+          <img src="assets/img/3.jpg" class="w-full h-full rounded-full object-cover">
+        </div>
+        <span class="text-xs mt-2">Food</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 rounded-full border border-gray-300 dark:border-gray-600 p-[2px]">
+          <img src="assets/img/4.jpg" class="w-full h-full rounded-full object-cover">
+        </div>
+        <span class="text-xs mt-2">Art</span>
+      </div>
+    </section>
+
+    <!-- TAB MENU -->
+    <nav class="flex justify-center gap-12 border-t border-b py-2 text-sm font-semibold text-gray-500 dark:text-gray-400 dark:border-gray-700 mb-6">
+      <button class="flex items-center gap-1 text-black dark:text-white border-t-2 border-black dark:border-white pt-1">📸 Posts</button>
+      <button class="flex items-center gap-1">🎬 Reels</button>
+      <button class="flex items-center gap-1">🏷️ Tagged</button>
+    </nav>
+
+    <!-- FEED FOTO -->
+    <section>
+      <section>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
+
+    <!-- Foto 1 -->
+    <div class="aspect-square relative group">
+      <img src="assets/img/5.jpg" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex justify-center items-center gap-4 text-white font-bold transition">
+        ❤️ 2.5k • 💬 112
+      </div>
+    </div>
+
+    <!-- Foto 2 -->
+    <div class="aspect-square relative group">
+      <img src="assets/img/6.jpg" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex justify-center items-center gap-4 text-white font-bold transition">
+        ❤️ 1.8k • 💬 96
+      </div>
+    </div>
+
+    <!-- Foto 3 -->
+    <div class="aspect-square relative group">
+      <img src="assets/img/7.jpg" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex justify-center items-center gap-4 text-white font-bold transition">
+        ❤️ 3.1k • 💬 150
+      </div>
+    </div>
+
+    <!-- Foto 4 -->
+    <div class="aspect-square relative group">
+      <img src="assets/img/8.jpg" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex justify-center items-center gap-4 text-white font-bold transition">
+        ❤️ 4.2k • 💬 210
+      </div>
+    </div>
+
+    <!-- Foto 5 -->
+    <div class="aspect-square relative group">
+      <img src="assets/img/9.jpg" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex justify-center items-center gap-4 text-white font-bold transition">
+        ❤️ 2.0k • 💬 101
+      </div>
+    </div>
+
+    <!-- Foto 6 -->
+    <div class="aspect-square relative group">
+      <img src="assets/img/10.jpg" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex justify-center items-center gap-4 text-white font-bold transition">
+        ❤️ 3.7k • 💬 175
+      </div>
+    </div>
+
+    <!-- Foto 7 -->
+    <div class="aspect-square relative group">
+      <img src="assets/img/11.jpg" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex justify-center items-center gap-4 text-white font-bold transition">
+        ❤️ 1.5k • 💬 88
+      </div>
+    </div>
+
+    <!-- Foto 8 -->
+    <div class="aspect-square relative group">
+      <img src="assets/img/12.jpg" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex justify-center items-center gap-4 text-white font-bold transition">
+        ❤️ 2.8k • 💬 140
+      </div>
+    </div>
+
+    <!-- Foto 9 -->
+    <div class="aspect-square relative group">
+      <img src="assets/img/13.jpg" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex justify-center items-center gap-4 text-white font-bold transition">
+        ❤️ 1.9k • 💬 90
+      </div>
+    </div>
+
+    <!-- Foto 10 -->
+    <div class="aspect-square relative group">
+      <img src="assets/img/14.jpg" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex justify-center items-center gap-4 text-white font-bold transition">
+        ❤️ 2.6k • 💬 120
+      </div>
+    </div>
+
+    <!-- Foto 11 -->
+    <div class="aspect-square relative group">
+      <img src="assets/img/15.jpg" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex justify-center items-center gap-4 text-white font-bold transition">
+        ❤️ 3.9k • 💬 200
+      </div>
+    </div>
+
+    <!-- Foto 12 -->
+    <div class="aspect-square relative group">
+      <img src="assets/img/16.jpg" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex justify-center items-center gap-4 text-white font-bold transition">
+        ❤️ 5.0k • 💬 250
+      </div>
+  </div>
+</section>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-gray-500 dark:text-gray-400 mt-10 py-4 border-t dark:border-gray-700">
+      <small>&copy; 2025 Instagram Clone - Tailwind Only</small>
+    </footer>
+  </main>
+
+  <!-- SCRIPT TOGGLE -->
+  <script>
+    const toggle = document.getElementById('darkToggle');
+    const html = document.documentElement;
+    toggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      toggle.textContent = html.classList.contains('dark') ? '☀️ Light Mode' : '🌙 Dark Mode';
+    });
+  </script>
+</body>
+</html>
